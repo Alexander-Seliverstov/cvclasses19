@@ -23,7 +23,7 @@ int demo_split_and_merge(int argc, char* argv[])
     int stddev = 50;
     cv::namedWindow(demo_wnd, 1);
     // \todo choose reasonable max value
-    cv::createTrackbar("stdev", demo_wnd, &stddev, 255);
+    cv::createTrackbar("stdev", demo_wnd, &stddev, 128);
 
     while (cv::waitKey(30) != 27) // ESC
     {
